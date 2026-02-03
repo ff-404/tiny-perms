@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "tiny-perms",
+  "version": "${version}",
+  "authors": [
+    "extclp"
+  ],
+  "entrypoints": {
+    "main": [
+      "com.extclp.tinyperms.TinyPerms"
+    ]
+  },
+  "depends": {
+    "fabric-command-api-v2": "*"
+  }
+}
