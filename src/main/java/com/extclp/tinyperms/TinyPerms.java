@@ -228,7 +228,7 @@ public class TinyPerms implements ModInitializer {
     }
 
     static void loadGroups() {
-        Path file = Paths.get("config/permission.json");
+        Path file = Paths.get("config/tiny-perms.json");
         if (!Files.exists(file)) {
             groups = new ArrayList<>();
             groups.add(new Group("default"));
@@ -248,7 +248,7 @@ public class TinyPerms implements ModInitializer {
     static void saveGroups() {
         try {
             Gson gson = new Gson();
-            Files.writeString(Paths.get("config/permission.json"), gson.toJson(groups));
+            Files.writeString(Paths.get("config/tiny-perms.json"), gson.toJson(groups));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
